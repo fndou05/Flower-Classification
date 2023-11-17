@@ -51,6 +51,11 @@ coverage.xml
 .pytest_cache/
 cover/
 
+#Ignoring large folders
+code/hyperband/
+code/logs/
+data/
+
 # Translations
 *.mo
 *.pot
