@@ -61,6 +61,7 @@ Our Confusion Matrix was all over the place. Clearly theres more we can do withi
 <br>
 
 Our accuracy was sky-rocketing with the test scores plateauing, which is a telltale sign of overfitting. Thats why augmenting our data was able to improve the model significantly. It allows the model to generalize on the images and patterns more efficiently
+
 ![img](./images/firstcnnloss.png)
 <br>
 
@@ -153,11 +154,11 @@ Test Accuracy: 0.7884747982025146
 ```
 ### VGG-16 Model Performance
 
-![img](./images/vgg16cnncm.png)
+![img](./images/vgg16cm.png)
 <br>
-![img](./images/vgg16cnnacc.png)
+![img](./images/vgg16acc.png)
 <br>
-![img](./images/vgg16cnnloss.png)
+![img](./images/vgg16loss.png)
 <br>
 ```
 46/46 [==============================] - 47s 1s/step - loss: 0.2961 - accuracy: 0.9310
@@ -202,7 +203,7 @@ When I implement transfer learning with VGG16, I am taking advantage of its robu
 
 ## For More Information
 
-Please review the full analysis in [my Jupyter Notebook](./code/Flower-Image-Classification.ipynb) or my [presentation](./BlossomTech-Presentation.pdf).
+Please review the full analysis in [my Jupyter Notebook](./code/Flower-Image-Classification.ipynb) or my [presentation](./BlossomTech%20Presentation.pdf).
 
 For any additional questions, please contact me:
 
@@ -210,16 +211,11 @@ For any additional questions, please contact me:
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
-
 ```
 ├── code
 │   └── Flower Image Classification.ipynb
 │   └── models
 ├── images
-├── Data
-│   └── train
-│   └── val
 ├── README.md
 ├── .gitignore
 └── BlossomTech Presentation.pdf
