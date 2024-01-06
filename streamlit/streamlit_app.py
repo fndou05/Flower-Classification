@@ -39,7 +39,7 @@ def load_model():
 model = load_model()
 
 with st.sidebar:
-    st.image('../images/streamlit-image.jpg')
+    st.image('images/streamlit-image.jpg')
     st.title("BlossomBotanist")
     st.subheader("Image Based Florapedia")
 
