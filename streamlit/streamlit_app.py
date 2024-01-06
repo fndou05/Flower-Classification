@@ -39,7 +39,13 @@ def load_model():
 model = load_model()
 
 with st.sidebar:
-    st.image('images/streamlit-image.jpg')
+    # Correctly locate the image path
+    current_file_path = os.path.dirname(__file__)
+    sidebar_image_path = os.path.join(current_file_path, 'images', 'streamlit-image.jpg')
+    sidebar_image = Image.open(sidebar_image_path)
+    
+    # Display the image in the sidebar
+    st.image(sidebar_image, caption='BlossomBotanist Logo')
     st.title("BlossomBotanist")
     st.subheader("Image Based Florapedia")
 
