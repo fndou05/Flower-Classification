@@ -3,6 +3,7 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image, ImageOps
 import numpy as np
+import os
 
 # hide deprication warnings which directly don't affect the working of the application
 import warnings
@@ -23,7 +24,15 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # Define the model loading function
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('models/VGG-16.h5')
+    # Get the directory of the current file
+    current_dir = os.path.dirname(__file__)
+
+    # Build the path to the model file
+    model_path = os.path.join(current_dir, 'models', 'VGG-16.h5')
+
+    # Load the model
+    model = tf.keras.models.load_model(model_path)
+
     return model
 
 # Load the model at the beginning of the app
