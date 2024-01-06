@@ -45,6 +45,7 @@ with st.sidebar:
     sidebar_image = Image.open(sidebar_image_path)
     
     # Display the image in the sidebar
+    st.image(sidebar_image)
     st.title("BlossomBotanist")
     st.subheader("Image Based Florapedia")
 
